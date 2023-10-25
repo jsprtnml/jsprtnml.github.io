@@ -1,0 +1,115 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+body {
+    background-color: #000;
+}
+
+h1 {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4em;
+    color: #333;
+    -webkit-text-shadow: 0 2px 1px rgba(0, 0, 0, 0.6), 0 0 2px rgba(0, 0, 0, 0.7);
+    -moz-text-shadow: 0 2px 1px rgba(0, 0, 0, 0.6), 0 0 2px rgba(0, 0, 0, 0.7);
+    text-shadow: 0 2px 1px rgba(0, 0, 0, 0.6), 0 0 2px rgba(0, 0, 0, 0.7);
+    word-spacing: 16px;
+}
+
+p {
+    font-family: 'Courier';
+    font-size: 1.4em;
+    color: #BDC3C7;
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background: url('');
+    background-size: cover;
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+    display: table;
+}
+
+.content {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.item {
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    padding: 8px;
+}
+
+.wrap {
+    padding: 1em 0;
+}
+
+.line-1 {
+    position: relative;
+    /*     top: 50%;   */
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255, 255, 255, .75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    /*     transform: translateY(-50%);     */
+}
+
+/* Animation */
+.anim-typewriter {
+    animation: typewriter 4s steps(44) 1s 1 normal both,
+        blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 22em;
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: rgba(255, 255, 255, .75);
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    h1 {
+        font-size: 6em;
+    }
+
+    p {
+        font-size: 1.6em;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+}
